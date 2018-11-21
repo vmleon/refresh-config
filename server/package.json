@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Web socket server to watch file system",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/vmleon/refresh-config.git"
+  },
+  "keywords": [
+    "websocket",
+    "filesystem",
+    "watch"
+  ],
+  "author": "Victor Martin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/vmleon/refresh-config/issues"
+  },
+  "homepage": "https://gitlab.com/vmleon/refresh-config#readme",
+  "dependencies": {
+    "pino": "^5.8.1",
+    "ws": "^6.1.2"
+  }
+}
