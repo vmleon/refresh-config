@@ -17,7 +17,7 @@ const sendConfig = ws => {
   fs.readFile(configPath, { encoding: 'utf8' }, (err, data) => {
     if (err) log.error(err);
     log.info(`Sending new ${configPath} content: ${data}`);
-    ws.send(JSON.stringify(data, null, 0), err => log.error(err));
+    ws.send(data, err => log.error(err));
   });
 };
 
